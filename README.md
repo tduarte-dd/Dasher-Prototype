@@ -105,7 +105,7 @@ static let customStyleURI = "mapbox://styles/your-username/your-style-id"
 - Verify `NSLocationWhenInUseUsageDescription` is set in Info.plist
 
 ### Build Errors
-- Ensure you're using Xcode 15.0 or later
+- Ensure you're using Xcode 26 or later
 - Clean build folder (⌘+Shift+K) and rebuild
 - Verify all dependencies are properly resolved
 
