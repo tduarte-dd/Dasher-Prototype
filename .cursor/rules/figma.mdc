@@ -1,0 +1,12 @@
+---
+description: Rules for when using Figma MCP
+globs:
+alwaysApply: false
+---
+
+- When using Figma MCP, always prioritize implementing designs using SwiftUI's native components and patterns.
+- Do not attempt to pixel-match or exactly recreate the interface as shown in Figma; instead, interpret the design intent and use the closest appropriate SwiftUI controls, layouts, and modifiers.
+- Favor system-provided elements (e.g., Button, Toggle, List, NavigationStack, etc.) over custom drawing or manual recreation of UI elements.
+- Only create custom SwiftUI views if the design intent cannot be achieved with native components and modifiers.
+- Maintain accessibility, platform conventions, and adaptivity (e.g., Dynamic Type, Dark Mode) by leveraging SwiftUI's built-in features.
+- If a Figma component does not have a direct SwiftUI equivalent, use the most semantically appropriate native component and style it to match the spirit of the design, not the exact appearance.
