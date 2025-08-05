@@ -10,6 +10,14 @@ A SwiftUI-based iOS prototype application featuring interactive maps powered by 
 ## Setup Instructions
 
 ### Clone the Repository
+
+#### Graphical Way 
+Download [Github Desktop](https://desktop.github.com/download/), install to your Applications folder, and click on the **Open with Github Desktop** button.
+
+<img width="482" height="405" alt="image" src="https://github.com/user-attachments/assets/1b77d15d-5d56-44c5-b6f2-90d85db7b1e2" />
+
+#### Using the Terminal
+
 ```bash
 git clone https://github.com/tduarte-dd/Dasher-Prototype.git
 cd "Dasher Prototype"
@@ -64,7 +72,7 @@ The app includes a comprehensive showcase of iOS components including:
 ### MapConfiguration.swift
 - Handles Mapbox map setup and styling
 - Manages location permissions via `LocationPermissionManager`
-- Configures custom map style: `mapbox://styles/doordash/cm5x2b2jz00cj01slckm8h5w0`
+- Configures custom map style.
 
 ### ContentView.swift
 - Main app interface with map and bottom sheet
