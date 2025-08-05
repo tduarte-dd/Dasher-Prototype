@@ -6,6 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E901725C2E428F1800F500CE /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = E901725B2E428F1800F500CE /* MapboxMaps */; };
+		E901725F2E428F4F00F500CE /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = E901725E2E428F4F00F500CE /* Inject */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E90172662E428FDB00F500CE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E901724A2E428E5500F500CE /* Dasher Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dasher Prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E901725C2E428F1800F500CE /* MapboxMaps in Frameworks */,
+				E901725F2E428F4F00F500CE /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +75,7 @@
 				E90172462E428E5500F500CE /* Sources */,
 				E90172472E428E5500F500CE /* Frameworks */,
 				E90172482E428E5500F500CE /* Resources */,
+				E90172662E428FDB00F500CE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -65,6 +86,8 @@
 			);
 			name = "Dasher Prototype";
 			packageProductDependencies = (
+				E901725B2E428F1800F500CE /* MapboxMaps */,
+				E901725E2E428F4F00F500CE /* Inject */,
 			);
 			productName = "Dasher Prototype";
 			productReference = E901724A2E428E5500F500CE /* Dasher Prototype.app */;
@@ -94,6 +117,10 @@
 			);
 			mainGroup = E90172412E428E5400F500CE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E901725A2E428F1800F500CE /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+				E901725D2E428F4F00F500CE /* XCRemoteSwiftPackageReference "Inject" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E901724B2E428E5500F500CE /* Products */;
 			projectDirPath = "";
@@ -249,13 +276,16 @@
 		E90172562E428E5600F500CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = DasherIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J9N343T36F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dasher-Prototype-Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location, because why not?";
+				INFOPLIST_KEY_NSLocationUsageDescription = "We need your location, because why not?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -281,13 +311,16 @@
 		E90172572E428E5600F500CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = DasherIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J9N343T36F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dasher-Prototype-Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location, because why not?";
+				INFOPLIST_KEY_NSLocationUsageDescription = "We need your location, because why not?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -332,6 +365,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E901725A2E428F1800F500CE /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+		E901725D2E428F4F00F500CE /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E901725B2E428F1800F500CE /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E901725A2E428F1800F500CE /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+		E901725E2E428F4F00F500CE /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E901725D2E428F4F00F500CE /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E90172422E428E5400F500CE /* Project object */;
 }

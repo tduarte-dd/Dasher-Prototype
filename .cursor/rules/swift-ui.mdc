@@ -1,0 +1,43 @@
+---
+description: SwiftUI Prototyping Rules for Xcode
+globs: **/*.swift
+alwaysApply: false
+---
+
+- Always keep configurations (e.g., constants, themes, models) in separate files from SwiftUI views.
+
+- Add comments above each section or view to explain its purpose in plain language.
+
+- Prefer building using `xcodebuild` over relying on linting alone. 
+
+- Ignore import errors in files, they might be solved when building.
+
+- Use clear and descriptive names for views (e.g., `LoginScreenView`, `HeaderSectionView`) — avoid generic names like `MyView`.
+
+- Keep one major view per file to improve clarity and navigation.
+
+- Use `PreviewProvider` for all views so they are visible in the canvas by default.
+
+- Avoid deeply nested views (e.g., VStack > HStack > ZStack within one body). Break into smaller components if needed.
+
+- Use SF Symbols for icons when prototyping to avoid custom asset setup.
+
+- Keep modifier chains simple. If a view has more than 3-4 chained modifiers, consider extracting into a helper function or computed view.
+
+- Add spacing between logical sections using `Spacer()` or `.padding()` to visually separate UI parts — it helps non-coders see structure.
+
+- Use simple and consistent naming for variables and views so non-coders can understand what each part does.
+
+- Prefer using built-in SwiftUI controls (like `Button`, `TextField`, `Toggle`) instead of custom UI, so the code is easier to read and maintain.
+
+- When showing data, use clear labels and avoid abbreviations or technical terms.
+
+- For colors, use the system color palette (e.g., `.primary`, `.secondary`, `.accentColor`) to ensure good contrast and accessibility.
+
+- Use `.glassEffect()` and other new SwiftUI modifiers directly, as they are designed to be simple and visually appealing.
+
+- If a view is reused, make it a separate struct with a descriptive name and a preview.
+
+- Avoid using advanced Swift features (like generics or protocols) in view code unless absolutely necessary.
+
+- When in doubt, prioritize clarity and visual simplicity over cleverness or code brevity.

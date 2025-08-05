@@ -1,6 +1,6 @@
 //
 //  Dasher_PrototypeApp.swift
-//  Dasher Prototype
+//  Invokes the main view
 //
 //  Created by Thiago Duarte on 8/5/25.
 //
