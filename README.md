@@ -72,7 +72,7 @@ The app includes a comprehensive showcase of iOS components including:
 ### MapConfiguration.swift
 - Handles Mapbox map setup and styling
 - Manages location permissions via `LocationPermissionManager`
-- Configures custom map style: `mapbox://styles/doordash/cm5x2b2jz00cj01slckm8h5w0`
+- Configures custom map style.
 
 ### ContentView.swift
 - Main app interface with map and bottom sheet
