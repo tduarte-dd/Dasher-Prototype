@@ -29,7 +29,7 @@ Dasher Prototype/
 │   ├── ComponentShowcaseView.swift    # UI components showcase
 │   ├── MapConfiguration.swift         # Map setup and location services
 │   ├── Assets.xcassets/               # App icons and assets
-│   └── DasherIcon.icon/              # Custom icon assets
+│   └── DasherIcon.icon/               # Custom App Icon Source
 ├── Dasher-Prototype-Info.plist        # App configuration (Mapbox token here)
 └── Dasher Prototype.xcodeproj/        # Xcode project file
 ```
