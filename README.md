@@ -2,33 +2,6 @@
 
 A SwiftUI-based iOS prototype application featuring interactive maps powered by Mapbox and a comprehensive showcase of native iOS components.
 
-## Overview
-
-Dasher Prototype is a modern iOS application built with SwiftUI that demonstrates:
-- **Interactive Maps**: Custom-styled Mapbox integration with user location tracking
-- **Component Library**: Extensive showcase of native iOS UI components and controls
-- **Modern UI**: Clean, glass-morphism design with bottom sheet interactions
-- **Location Services**: CoreLocation integration for real-time positioning
-
-## Features
-
-### 🗺️ Map Integration
-- Custom Mapbox style integration
-- Real-time user location tracking with accuracy ring
-- Follow-puck viewport for smooth navigation
-- Location permission management
-
-### 🎨 Component Showcase
-The app includes a comprehensive showcase of iOS components including:
-- **Typography**: Various text styles and font weights
-- **Basic Controls**: Toggles, sliders, steppers
-- **Input Controls**: Text fields, search bars, date pickers
-- **Selection Controls**: Segmented controls, menus, pickers
-- **Action Buttons**: Primary, secondary, and specialized button styles
-- **Visual Elements**: SF Symbols, expandable sections, badges
-- **Status & Progress**: Progress bars, loading indicators, status dots
-
-
 ## Prerequisites
 
 - Xcode 26.0 or later
@@ -60,6 +33,31 @@ Dasher Prototype/
 ├── Dasher-Prototype-Info.plist        # App configuration (Mapbox token here)
 └── Dasher Prototype.xcodeproj/        # Xcode project file
 ```
+## Overview
+
+Dasher Prototype is a modern iOS application built with SwiftUI that demonstrates:
+- **Interactive Maps**: Custom-styled Mapbox integration with user location tracking
+- **Component Library**: Extensive showcase of native iOS UI components and controls
+- **Modern UI**: Clean, glass-morphism design with bottom sheet interactions
+- **Location Services**: CoreLocation integration for real-time positioning
+
+## Features
+
+### 🗺️ Map Integration
+- Custom Mapbox style integration
+- Real-time user location tracking with accuracy ring
+- Follow-puck viewport for smooth navigation
+- Location permission management
+
+### 🎨 Component Showcase
+The app includes a comprehensive showcase of iOS components including:
+- **Typography**: Various text styles and font weights
+- **Basic Controls**: Toggles, sliders, steppers
+- **Input Controls**: Text fields, search bars, date pickers
+- **Selection Controls**: Segmented controls, menus, pickers
+- **Action Buttons**: Primary, secondary, and specialized button styles
+- **Visual Elements**: SF Symbols, expandable sections, badges
+- **Status & Progress**: Progress bars, loading indicators, status dots
 
 ## Key Components
 
