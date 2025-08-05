@@ -42,7 +42,7 @@ git clone https://github.com/tduarte-dd/Dasher-Prototype.git
 cd "Dasher Prototype"
 ```
 
-### Instructions
+### Configuration and Usage
 
 - Instructions are available on [Google Docs](https://docs.google.com/document/d/1bsG73m-JH46BBuBy8MfJWoltFelblHDZO3o8z8NyO5E/edit?usp=sharing)
 
